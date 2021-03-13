@@ -1,0 +1,16 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+    
+}
+.discount-code,.right-side,.code,.yo{
+    font-size: 20px;
+}
+.has,.ani,.pra,.ty{
+    font-size: 15px;
+}
+.fa-heart:hover{
+    color: red;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+      integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+      crossorigin="anonymous"
+    />
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/> 
+    <script src =  "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> 
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-10 col-11 mx-auto">
+          <div class="row mt-5 gx-3">
+            <!--left side div-->
+            <div class="col-md-12 col-lg-8 mx-auto main-cart shadow">
+                <div class="card p-4">
+                    <h2>Cart Items (2 items)</h2>
+                    <div class="row">
+                        <!--Images-->
+                        <div class="col-md-5 col-11 mx-auto bg-light d-flex align-items-center justify-content-center shadow">
+                            <img src="https://www.bing.com/th?id=OIP.tBRyOKsvc9CKFmbyqgH4JQHaIP&w=98&h=102&c=8&rs=1&qlt=90&dpr=1.25&pid=3.1&rm=2" class="img-fluid "> 
+                        </div>
+                        <!--Image Details-->
+                        <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                            <div class="row">
+                                <div class="col-6 card-title ty">
+                                    <h1 class="mb-4 product-name">Blue Zara Shirt</h1>
+                                    <p class="mb-2">SHIRT-BLUE</p>
+                                    <p class="mb-2">COLOR:- BLUE</p>
+                                    <p class="mb-3">SIZE: M</p>
+                                </div>
+                                <!--Quantity-->
+                                <div class="col-6">
+                                    <ul class="pagination justify-content-end set-quantity">
+                                        <li class="page-item"><button class="page-link" onclick="decreaseNumber('text-box','itemval')"><i class="fas fa-minus"></i></button></li>
+                                        <li class="page-item"><input type="text" name="" value="0" class="page-link" id="text-box"></button></li>
+                                        <li class="page-item"><button class="page-link" onclick="increaseNumber('text-box','itemval')"><i class="fas fa-plus"></i></button></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                              <div class="row has">
+                                  <div class="col-8 d-flex justify-content-between remove_wish">
+                                      <p><i class="fas fa-trash-alt"></i>REMOVE ITEM</p>
+                                      <p><i class="fas fa-heart"></i>Move to wish list</p>
+                                  </div>
+                                  <div class="col-4 d-flex justify-content-end price_money">
+                                      <h3>$<span id="itemval">0.00</span></h3>
+                                  </div>
+
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-4">
+                    <div class="row">
+                        <!--Images-->
+                        <div class="col-md-5 col-11 mx-auto bg-light d-flex align-items-center justify-content-center shadow">
+                            <img src="https://www.bing.com/th?id=OIP.tBRyOKsvc9CKFmbyqgH4JQHaIP&w=98&h=102&c=8&rs=1&qlt=90&dpr=1.25&pid=3.1&rm=2"  class="img-fluid "> 
+                        </div>
+                        <!--Image Details-->
+                        <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                            <div class="row">
+                                <div class="col-6 card-title pra">
+                                    <h1 class="mb-4 product-name">Black Zara Shirt</h1>
+                                    <p class="mb-2">BLACK-BLUE</p>
+                                    <p class="mb-2">COLOR:- BLACK</p>
+                                    <p class="mb-3">SIZE: XL</p>
+                                </div>
+                                <!--Quantity-->
+                                <div class="col-6">
+                                    <ul class="pagination justify-content-end set-quantity">
+                                        <li class="page-item"><button class="page-link" onclick="decreaseNumber('text-box1','itemval1')"><i class="fas fa-minus"></i></button></li>
+                                        <li class="page-item"><input type="text" name="" value="0" class="page-link" id="text-box1"></button></li>
+                                        <li class="page-item"><button class="page-link" onclick="increaseNumber('text-box1','itemval1')"><i class="fas fa-plus"></i></button></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                              <div class="row ani">
+                                  <div class="col-8 d-flex justify-content-between remove_wish">
+                                      <p><i class="fas fa-trash-alt"></i>REMOVE ITEM</p>
+                                      <p><i class="fas fa-heart"></i>Move to wish list</p>
+                                  </div>
+                                  <div class="col-4 d-flex justify-content-end price_money">
+                                      <h3>$<span id="itemval1">0.00</span></h3>
+                                  </div>
+    
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--right side div-->
+            <div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mr-md-5">
+               <div class="right-side p-3 shadow bg-white">
+                   <h2 class="product_name mb-5">The Total Amount is</h2>
+                   <div class="price_indic d-flex justify-content-between">
+                       <p>Product Amount</p>
+                       <p>$<span id="amt">0.00</span></p>
+                   </div>
+                   <div class="price_indic d-flex justify-content-between">
+                    <p>Shipping Charge</p>
+                    <p>$<span id="ship_amt">50.0</span></p>
+                </div>
+                <hr/>
+                <div class="total-amt d-flex justify-content-between font-weight-bold">
+                    <p>The total Amount of (including VAT)</p>
+                    <p>$<span id="total_cart_amt">0.00</span></p>
+                </div>
+                <button class="btn btn-primary text-uppercase">CHECKOUT</button>
+               </div>
+               <!--Discount-->
+               <div class="discount-code mt-3 shadow">
+                   <div class="card">
+                       <div class="card-body">
+                               <div class="mt-3">
+                                   <input type="text" name="" id="discount_code1" class="form-control font-weight-bold" placeholder="Enter the Discount Code">
+                                   <small id="error_trw" class="text-dark mt-3">Code is Shopping</small>
+                               </div>
+                               <button class="btn btn-primary  mt-3 btn-lg" onclick="discount_code()">Apply</button>
+                       </div>
+                   </div>
+               </div>
+               <!--Discount code-->
+               <div class="mt-3 shadow p-3 bg-white code">
+                   <div class="pt-4">
+                       <h5 class="mb-4 yo">Expected delivery date</h5>
+                       <p>July 27th 2020 - July 29th 2020</p>
+                   </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="main3.js"></script>
+</html>
